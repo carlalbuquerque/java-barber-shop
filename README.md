@@ -1,7 +1,7 @@
 # 📌 Projeto Backend - API Spring Boot
 
 ## 🚀 Sobre o Projeto
-Este é o backend do sistema [Nome do Projeto], desenvolvido em **Spring Boot** para fornecer uma API robusta e segura para a aplicação frontend.
+Este é o backend do sistema **Barber Shop**, desenvolvido com **Spring Boot** para fornecer uma API robusta e segura para a aplicação frontend. O projeto foi criado como uma atividade prática proposta durante um **bootcamp da DIO**, visando consolidar conhecimentos em desenvolvimento de APIs, banco de dados relacional e boas práticas de arquitetura.
 
 ## 🛠 Tecnologias Utilizadas
 - **Java 17+**
