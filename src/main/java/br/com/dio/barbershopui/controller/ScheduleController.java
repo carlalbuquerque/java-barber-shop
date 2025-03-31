@@ -18,7 +18,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 
 @RestController
-@RequestMapping("Schedules")
+@RequestMapping("schedules")
 @AllArgsConstructor
 public class ScheduleController {
 
@@ -35,13 +35,13 @@ public class ScheduleController {
     }
 
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(NO_CONTENT)
     void delete(@PathVariable final long id){
         service.delete(id);
     }
 
-    @GetMapping("{year}/{month}")
+    @GetMapping("/{year}/{month}")
     ScheduleAppointmentMonthResponse ListMonth(@PathVariable final int year,@PathVariable final  int month){
         var yearMonth = YearMonth.of(year,month);
         var startAt = yearMonth.atDay(1)
